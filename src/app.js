@@ -22,7 +22,7 @@ mongoose
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: ["https://pollingsystem-himank.vercel.app"], methods: ["GET", "POST"], credentials: true },
+  cors: { origin: ["https://live-polling-system-himank.vercel.app"], methods: ["GET", "POST"], credentials: true },
 });
 
 // In-memory state for currently-active poll and connected users
