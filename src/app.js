@@ -146,4 +146,8 @@ app.get("/", (req, res) => res.send("Polling System Backend"));
 app.post("/teacher-login", (req, res) => TeacherLogin(req, res));
 app.get("/polls/:teacherUsername", (req, res) => getPolls(req, res));
 
+app.get("/ping", (req, res) => {
+    res.send("OK");
+});
+
 server.listen(port, () => console.log(`Server running on port ${port}...`));
